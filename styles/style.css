@@ -36,6 +36,7 @@
 
 .search-form__label {
     display: flex;
+    align-items: center;
     width: 100%;
 }
 
@@ -45,8 +46,8 @@
     padding: 3px 0;
     outline: none;
     border: none;
-    border-top: 1px solid rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
     font-family: "Fira Sans Condensed", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -167,22 +168,31 @@
     outline-offset: 1px;
 }
 
+.content__card-link_current {
+    background-color: #545050;: ;
+}
+
 .content__video-card {
     display: flex;
     justify-content: space-between;
 }
 
 .content__video-card-description-container {
+    padding: 2px;
     color:  rgba(255, 255, 255, 1);
 }
 
 .content__video-card-title {
+    max-width: 200px;
     margin-bottom: 8px;
     text-transform: uppercase;
     font-family: Oswald, sans-serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .content__video-card-description {
